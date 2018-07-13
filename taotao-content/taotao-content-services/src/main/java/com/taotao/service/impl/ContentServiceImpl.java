@@ -51,7 +51,7 @@ public class ContentServiceImpl implements ContentService {
 
 	@Override
 	public List<Tbcontent> getContentList(long categoryId) {
-		//这里去缓存
+		//这里取缓存
 		try {
 			String json = jedisClient.hget(CONTENT_KEY, categoryId+"");
 			if(StringUtils.isNotBlank(json)){//判断json是否为空

@@ -5,13 +5,17 @@ import com.github.pagehelper.PageInfo;
 import com.taotao.common.pojo.EasyUIDataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.utils.IDUtils;
+import com.taotao.common.utils.JsonUtils;
+import com.taotao.jedis.JedisClient;
 import com.taotao.mapper.TbitemMapper;
 import com.taotao.mapper.TbitemdescMapper;
 import com.taotao.pojo.Tbitem;
 import com.taotao.pojo.Tbitemdesc;
 import com.taotao.service.ItemService;
 import org.apache.activemq.command.ActiveMQTopic;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
@@ -25,6 +29,16 @@ import java.util.List;
 
 @Service
 public class ItemServiceImpl implements ItemService {
+	@Value("${ITEM_INFO}")
+	private String ITEM_INFO;
+	@Value("${BASE}")
+	private String BASE;
+	@Value("${DESC}")
+	private String DESC;
+	@Value("${PARAM}")
+	private String PARAM;
+	@Value("${ITEM_INFO_EXPIRE}")
+	private Integer ITEM_INFO_EXPIRE;
 	@Autowired
 	private TbitemMapper tbitemMapper;
 	@Autowired
@@ -33,9 +47,22 @@ public class ItemServiceImpl implements ItemService {
 	private JmsTemplate jmsTemplate;
 	@Autowired
 	private ActiveMQTopic topicDestination;
+	@Autowired
+	private JedisClient jedisClient;
 	@Override
 	public Tbitem getItemById(long id) {
+		String json = jedisClient.get(ITEM_INFO + ":" + id + BASE);
+		if (StringUtils.isNotBlank(json)){
+			Tbitem tbitem1 = JsonUtils.jsonToPojo(json, Tbitem.class);
+			return tbitem1;
+		}
 		Tbitem tbitem = tbitemMapper.getItemById(id);
+		try {
+			jedisClient.set(ITEM_INFO + ":" + id + BASE, JsonUtils.objectToJson(tbitem));
+			jedisClient.expire(ITEM_INFO + ":" + id + BASE,ITEM_INFO_EXPIRE);
+		}catch (Exception e){
+			e.printStackTrace();
+		}
 		return tbitem;
 	}
 
@@ -91,7 +118,22 @@ public class ItemServiceImpl implements ItemService {
 
 	@Override
 	public Tbitemdesc getTbitemdescById(long itemId) {
+		try {
+			String json= jedisClient.get(ITEM_INFO + ":" + itemId + DESC);
+			if (StringUtils.isNotBlank(json)){
+				Tbitemdesc tbitemdesc1 = JsonUtils.jsonToPojo(json, Tbitemdesc.class);
+				return tbitemdesc1;
+			}
+		}catch (Exception e){
+			e.printStackTrace();
+		}
 		Tbitemdesc tbitemdesc = tbitemdescMapper.getItemDescById(itemId);
+		try {
+			jedisClient.set(ITEM_INFO+":"+itemId+DESC,JsonUtils.objectToJson(tbitemdesc));
+			jedisClient.expire(ITEM_INFO+":"+itemId+DESC,ITEM_INFO_EXPIRE);
+		}catch (Exception e){
+			e.printStackTrace();
+		}
 		return tbitemdesc;
 	}
 

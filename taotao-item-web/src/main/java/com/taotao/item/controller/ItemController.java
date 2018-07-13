@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class ItemController {
@@ -19,10 +20,13 @@ public class ItemController {
     public String showItemInfo(@PathVariable long itemId,Model model){
         Tbitem tbitem = itemService.getItemById(itemId);
         Item item = new Item(tbitem);
-        Tbitemdesc tbitemdesc = itemService.getTbitemdescById(itemId);
         model.addAttribute("item",item);
-        model.addAttribute("tbitemdesc",tbitemdesc);
         return "item";
     }
-
+    @RequestMapping("/item/desc/{itemId}")
+    @ResponseBody
+    public String showItemdescInfo(@PathVariable long itemId,Model model){
+        Tbitemdesc tbitemdesc = itemService.getTbitemdescById(itemId);
+        return tbitemdesc.getItemDesc();
+    }
 }
