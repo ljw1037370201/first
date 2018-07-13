@@ -3,6 +3,7 @@ package com.taotao.service;
 import com.taotao.common.pojo.EasyUIDataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.Tbitem;
+import com.taotao.pojo.Tbitemdesc;
 
 public interface ItemService {
 	/**
@@ -24,4 +25,11 @@ public interface ItemService {
 	 * @return 返回自定义TaotaoResult对象 里面包含了状态码，消息，数据 ，以jeson数据格式返回
 	 */
 	public TaotaoResult addItem(Tbitem tbitem, String desc);
+
+	/**
+	 * 根据商品id查询商品描述信息
+	 * @param itemId 商品id
+	 * @return Tbitemdesc对象
+	 */
+	public Tbitemdesc getTbitemdescById(long itemId);
 }

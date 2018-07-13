@@ -88,5 +88,11 @@ public class ItemServiceImpl implements ItemService {
 		});
 		return TaotaoResult.ok();
 	}
-			
+
+	@Override
+	public Tbitemdesc getTbitemdescById(long itemId) {
+		Tbitemdesc tbitemdesc = tbitemdescMapper.getItemDescById(itemId);
+		return tbitemdesc;
+	}
+
 }

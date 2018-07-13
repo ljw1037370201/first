@@ -22,4 +22,5 @@ public interface TbitemMapper {
      * @param  tbitem 传入一个Tbitem对象
      */
     public void insertTbitem(Tbitem tbitem);
+
 }

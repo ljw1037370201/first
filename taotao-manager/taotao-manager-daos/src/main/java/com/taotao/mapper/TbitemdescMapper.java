@@ -8,4 +8,11 @@ public interface TbitemdescMapper {
 	 * @param tbitemdesc 商品描述对象
 	 */
     public void insertTbitemdesc(Tbitemdesc tbitemdesc);
+
+	/**
+	 * 根据商品id查询商品描述
+	 * @param itemId 商品id
+	 * @return  Tbitemdesc
+	 */
+	public Tbitemdesc getItemDescById(long itemId);
 }
