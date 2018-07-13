@@ -154,4 +154,5 @@
 	<dubbo:service interface="com.taotao.service.ItemService" ref="itemServiceImpl" timeout="300000"/>
 	<dubbo:service interface="com.taotao.service.ItemCatService" ref="itemCatServiceImpl" timeout="300000"/>
 	<dubbo:service interface="com.taotao.service.PictureService" ref="pictureServiceImpl" timeout="300000"/>
+	<dubbo:service interface="com.taotao.service.ItemparamService" ref="itemparamServiceImpl" timeout="300000"/>
 </beans>

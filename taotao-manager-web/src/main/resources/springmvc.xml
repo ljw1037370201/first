@@ -44,4 +44,5 @@
 	<dubbo:reference interface="com.taotao.service.ContentcategoryService" id="contentcategoryService" timeout="300000"/>
 	<dubbo:reference interface="com.taotao.service.ContentService" id="contentService" timeout="300000"/>
 	<dubbo:reference interface="com.taotao.search.service.SearchItemService" id="searchItemService" timeout="300000"/>
+	<dubbo:reference interface="com.taotao.service.ItemparamService" id="itemparamService" timeout="300000"/>
 </beans>

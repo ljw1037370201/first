@@ -22,9 +22,10 @@ public interface ItemService {
 	/**
 	 * 添加商品信息到数据库，注意有商品信息没有传递过来需要我们手动添加 比如商品id
 	 * @param tbitem 传入tbitem对象
+	 * @param itemParams 商品规格参数
 	 * @return 返回自定义TaotaoResult对象 里面包含了状态码，消息，数据 ，以jeson数据格式返回
 	 */
-	public TaotaoResult addItem(Tbitem tbitem, String desc);
+	public TaotaoResult addItem(Tbitem tbitem, String desc,String itemParams);
 
 	/**
 	 * 根据商品id查询商品描述信息

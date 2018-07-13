@@ -9,8 +9,10 @@ import com.taotao.common.utils.JsonUtils;
 import com.taotao.jedis.JedisClient;
 import com.taotao.mapper.TbitemMapper;
 import com.taotao.mapper.TbitemdescMapper;
+import com.taotao.mapper.TbitemparamMapper;
 import com.taotao.pojo.Tbitem;
 import com.taotao.pojo.Tbitemdesc;
+import com.taotao.pojo.Tbitemparam;
 import com.taotao.service.ItemService;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.apache.commons.lang3.StringUtils;
@@ -49,6 +51,8 @@ public class ItemServiceImpl implements ItemService {
 	private ActiveMQTopic topicDestination;
 	@Autowired
 	private JedisClient jedisClient;
+	@Autowired
+	private TbitemparamMapper tbitemparamMapper;
 	@Override
 	public Tbitem getItemById(long id) {
 		String json = jedisClient.get(ITEM_INFO + ":" + id + BASE);
@@ -61,7 +65,7 @@ public class ItemServiceImpl implements ItemService {
 			jedisClient.set(ITEM_INFO + ":" + id + BASE, JsonUtils.objectToJson(tbitem));
 			jedisClient.expire(ITEM_INFO + ":" + id + BASE,ITEM_INFO_EXPIRE);
 		}catch (Exception e){
-			e.printStackTrace();
+
 		}
 		return tbitem;
 	}
@@ -86,7 +90,7 @@ public class ItemServiceImpl implements ItemService {
 
 
 	@Override
-	public TaotaoResult addItem(Tbitem tbitem,String desc) {
+	public TaotaoResult addItem(Tbitem tbitem,String desc,String itemParams) {
 		final long itemId = IDUtils.genItemId();
 		tbitem.setId(itemId);
 		tbitem.setStatus((byte)1);
@@ -100,6 +104,13 @@ public class ItemServiceImpl implements ItemService {
 		tbitemdesc.setCreated(date);
 		tbitemdesc.setUpdated(date);
 		tbitemdescMapper.insertTbitemdesc(tbitemdesc);
+		//存入规格参数
+		Tbitemparam tbitemparam = new Tbitemparam();
+		tbitemparam.setId(itemId);
+		tbitemparam.setParamData(itemParams);
+		tbitemparam.setCreated(date);
+		tbitemparam.setUpdated(date);
+		tbitemparamMapper.insertTbitemparam(tbitemparam);
 		/**
 		 * 这里发布消息 更新缓存
 		 * 1.用点对点还是订阅与发布
@@ -132,7 +143,7 @@ public class ItemServiceImpl implements ItemService {
 			jedisClient.set(ITEM_INFO+":"+itemId+DESC,JsonUtils.objectToJson(tbitemdesc));
 			jedisClient.expire(ITEM_INFO+":"+itemId+DESC,ITEM_INFO_EXPIRE);
 		}catch (Exception e){
-			e.printStackTrace();
+
 		}
 		return tbitemdesc;
 	}
