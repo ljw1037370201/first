@@ -14,6 +14,13 @@ public interface JedisClient {
 	 * @return
 	 */
 	String get(String key);
+
+	/**
+	 * 根据key删除value
+	 * @param key 键
+	 * @return
+	 */
+	long del(String key);
 	/**
 	 * 判断key是否存在
 	 * @param key 键
@@ -23,7 +30,7 @@ public interface JedisClient {
 	/**
 	 * 设置key的生存时间
 	 * @param key
-	 * @param seconds 毫秒为单位
+	 * @param seconds 秒为单位
 	 * @return
 	 */
 	Long expire(String key, int seconds);

@@ -12,7 +12,7 @@ import javax.jms.TextMessage;
 
 public class ItemChangeListener implements MessageListener {
     @Autowired
-    private SearchItemServiceImpl searchItemServiceImpl;
+   private SearchItemServiceImpl searchItemServiceImpl;
     /**
      * 数据 传过来的id 查询数据库 得到商品信息
      * 调用solrJ的代码存入索引库中
