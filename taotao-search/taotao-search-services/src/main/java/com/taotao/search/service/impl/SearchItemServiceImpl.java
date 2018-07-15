@@ -53,13 +53,15 @@ public class SearchItemServiceImpl implements SearchItemService {
 		try {
 			SearchItem searchItem = searchItemMapper.getItemById(itemId);
 			SolrInputDocument document = new SolrInputDocument();
-			document.addField("id",searchItem.getId());
-			document.addField("item_title", searchItem.getTitle());
-			document.addField("item_sell_point", searchItem.getSellPoint());
-			document.addField("item_price", searchItem.getPrice());
-			document.addField("item_image", searchItem.getImage());
-			document.addField("item_category_name", searchItem.getCategoryName());
-			document.addField("item_desc", searchItem.getItemDesc());
+			if(searchItem != null){
+				document.addField("id",searchItem.getId());
+				document.addField("item_title", searchItem.getTitle());
+				document.addField("item_sell_point", searchItem.getSellPoint());
+				document.addField("item_price", searchItem.getPrice());
+				document.addField("item_image", searchItem.getImage());
+				document.addField("item_category_name", searchItem.getCategoryName());
+				document.addField("item_desc", searchItem.getItemDesc());
+			}
 			solrServer.add(document);
 			solrServer.commit();
 			return TaotaoResult.ok();

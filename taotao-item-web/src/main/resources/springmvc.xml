@@ -48,12 +48,13 @@
 	</bean>	
 
 	<!-- 引用dubbo服务 -->
-	<dubbo:application name="taotao-serach-web"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.25.167:2181"/>	
+	<dubbo:application name="taotao-item-web"/>
+	<dubbo:registry protocol="zookeeper" address="192.168.25.167:2181"/>
 	<!-- 接收服务 
 		interface:我消费那个接口 com.taotao.service.ItemService
 		id:itemService id的注入
 		<dubbo:reference interface="com.taotao.search.service.SearchService" id="searchService" timeout="300000"/>
 	-->
 	<dubbo:reference interface="com.taotao.service.ItemService" id="itemService" timeout="300000"/>
+	<dubbo:reference interface="com.taotao.service.ItemParamItemService" id="itemParamItemService" timeout="300000"/>
 </beans>

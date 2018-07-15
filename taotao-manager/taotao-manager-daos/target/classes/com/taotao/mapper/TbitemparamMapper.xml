@@ -6,7 +6,6 @@
     </select>
     <insert id="insertTbitemparam" parameterType="com.taotao.pojo.Tbitemparam">
         INSERT INTO tbitemparam(itemCatId, paramData, created, updated) VALUE (
-        #{itemCatId},#{paramData},#{created},#{updated}
-        )
+        #{itemCatId},#{paramData},#{created},#{updated})
     </insert>
 </mapper>

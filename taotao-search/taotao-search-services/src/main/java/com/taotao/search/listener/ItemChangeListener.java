@@ -24,9 +24,9 @@ public class ItemChangeListener implements MessageListener {
             try {
                 //取商品id
                 TextMessage textMessage = (TextMessage)message;
-                Long itemId = Long.parseLong(textMessage.getText());
+                String itemId = textMessage.getText();
                 //向索引库添加文档
-                searchItemServiceImpl.addDocument(itemId);
+                searchItemServiceImpl.addDocument(Long.valueOf(itemId));
             } catch (JMSException e) {
                 e.printStackTrace();
             }

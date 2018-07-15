@@ -32,7 +32,7 @@ public class ItemparamServiceImpl implements ItemparamService {
             tbitemparamMapper.insertTbitemparam(tbitemparam);
             return TaotaoResult.ok(tbitemparam);
         }catch (Exception e){
-            e.printStackTrace();
+
         }
         return TaotaoResult.ok();
     }

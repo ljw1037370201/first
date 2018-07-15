@@ -4,6 +4,7 @@ import com.taotao.common.pojo.EasyUIDataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.Tbitem;
 import com.taotao.pojo.Tbitemdesc;
+import com.taotao.pojo.Tbitemparam;
 
 public interface ItemService {
 	/**
@@ -33,4 +34,11 @@ public interface ItemService {
 	 * @return Tbitemdesc对象
 	 */
 	public Tbitemdesc getTbitemdescById(long itemId);
+
+	/**
+	 * 根据商品id查询商品规格参数模板信息
+	 * @param itemId 商品id
+	 * @return
+	 */
+	public String getTbitemparamById(long itemId);
 }

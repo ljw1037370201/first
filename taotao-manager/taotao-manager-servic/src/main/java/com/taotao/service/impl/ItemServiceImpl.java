@@ -10,9 +10,11 @@ import com.taotao.jedis.JedisClient;
 import com.taotao.mapper.TbitemMapper;
 import com.taotao.mapper.TbitemdescMapper;
 import com.taotao.mapper.TbitemparamMapper;
+import com.taotao.mapper.TbitemparamitemMapper;
 import com.taotao.pojo.Tbitem;
 import com.taotao.pojo.Tbitemdesc;
 import com.taotao.pojo.Tbitemparam;
+import com.taotao.pojo.Tbitemparamitem;
 import com.taotao.service.ItemService;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.apache.commons.lang3.StringUtils;
@@ -28,6 +30,7 @@ import javax.jms.Session;
 import javax.jms.TextMessage;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class ItemServiceImpl implements ItemService {
@@ -53,6 +56,8 @@ public class ItemServiceImpl implements ItemService {
 	private JedisClient jedisClient;
 	@Autowired
 	private TbitemparamMapper tbitemparamMapper;
+	@Autowired
+	private TbitemparamitemMapper tbitemparamitemMapper;
 	@Override
 	public Tbitem getItemById(long id) {
 		String json = jedisClient.get(ITEM_INFO + ":" + id + BASE);
@@ -105,12 +110,12 @@ public class ItemServiceImpl implements ItemService {
 		tbitemdesc.setUpdated(date);
 		tbitemdescMapper.insertTbitemdesc(tbitemdesc);
 		//存入规格参数
-		Tbitemparam tbitemparam = new Tbitemparam();
-		tbitemparam.setId(itemId);
-		tbitemparam.setParamData(itemParams);
-		tbitemparam.setCreated(date);
-		tbitemparam.setUpdated(date);
-		tbitemparamMapper.insertTbitemparam(tbitemparam);
+		Tbitemparamitem tbitemparamitem = new Tbitemparamitem();
+		tbitemparamitem.setItemId(itemId);
+		tbitemparamitem.setParamData(itemParams);
+		tbitemparamitem.setCreated(date);
+		tbitemparamitem.setUpdated(date);
+		tbitemparamitemMapper.insertItemparamitem(tbitemparamitem);
 		/**
 		 * 这里发布消息 更新缓存
 		 * 1.用点对点还是订阅与发布
@@ -146,6 +151,31 @@ public class ItemServiceImpl implements ItemService {
 
 		}
 		return tbitemdesc;
+	}
+
+	@Override
+	public String  getTbitemparamById(long itemId) {
+		Tbitemparamitem itemparamitem = tbitemparamitemMapper.getItemparamitemById(itemId);
+		String paramData = itemparamitem.getParamData();
+		List<Map> jsonList = JsonUtils.jsonToList(paramData, Map.class);
+		StringBuffer sb = new StringBuffer();
+		sb.append("<table cellpadding=\"0\" cellspacing=\"1\" width=\"100%\" border=\"0\" class=\"Ptable\">\n");
+		sb.append("    <tbody>\n");
+		for(Map m1:jsonList) {
+			sb.append("        <tr>\n");
+			sb.append("            <th class=\"tdTitle\" colspan=\"2\">"+m1.get("group")+"</th>\n");
+			sb.append("        </tr>\n");
+			List<Map> list2 = (List<Map>) m1.get("params");
+			for(Map m2:list2) {
+				sb.append("        <tr>\n");
+				sb.append("            <td class=\"tdTitle\">"+m2.get("k")+"</td>\n");
+				sb.append("            <td>"+m2.get("v")+"</td>\n");
+				sb.append("        </tr>\n");
+			}
+		}
+		sb.append("    </tbody>\n");
+		sb.append("</table>");
+		return sb.toString();
 	}
 
 }
