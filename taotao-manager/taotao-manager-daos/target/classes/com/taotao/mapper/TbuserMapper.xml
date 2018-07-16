@@ -13,4 +13,7 @@
     <insert id="insertUser" parameterType="com.taotao.pojo.Tbuser">
         INSERT INTO tbuser(username, password, phone, email, created, updated) VALUE (#{username},#{password},#{phone},#{email},#{created},#{updated})
     </insert>
+    <select id="selectUser" resultType="com.taotao.pojo.Tbuser" >
+        SELECT * FROM tbuser WHERE username=#{0} AND password=#{1}
+    </select>
 </mapper>

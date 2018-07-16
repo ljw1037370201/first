@@ -18,4 +18,26 @@ public interface UserService {
      * @return {status：200,msg:"ok",data:""} 如果是status为400则表示注册不成功并且返回 msg:注册失败. 请校验数据后请再提交数据.
      */
     TaotaoResult createUser(Tbuser tbuser);
+
+    /**
+     * 用户登陆主要校验数据
+     * @param username 账号
+     * @param password 密码
+     * @return {status：200,msg:"ok",data:token} token不重复的uuid
+     */
+    TaotaoResult loginUser(String username,String password);
+
+    /**
+     * 根据token查询用户是否登陆
+     * @param token 令牌
+     * @return {status：200,msg:"ok",data:用户对象的json} 注意token是要拿去查redis的 他在cookie里面
+     */
+    TaotaoResult getUserByToken(String token);
+
+    /**
+     * 根据token查询是否登陆
+     * @param token 令牌
+     * @return {status：200,msg:"ok",data:""}
+     */
+    TaotaoResult delUserByToken(String token);
 }

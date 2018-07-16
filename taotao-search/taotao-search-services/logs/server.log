@@ -7565,3 +7565,95 @@ Client is connected to ZooKeeper
 
 [INFO ] 2018-07-16 15:57:28,752 method:org.apache.solr.common.cloud.ZkStateReader.createClusterStateWatchersAndUpdate(ZkStateReader.java:280)
 Updating cluster state from ZooKeeper... 
+
+
+[INFO ] 2018-07-16 20:44:29,729 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-07-16 20:44:29,729 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=yanhk
+
+
+[INFO ] 2018-07-16 20:44:29,729 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2018-07-16 20:44:29,729 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-07-16 20:44:29,729 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2018-07-16 20:44:29,732 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\taotao\taotao-search\taotao-search-services\target\test-classes;D:\taotao\taotao-search\taotao-search-services\target\classes;D:\taotao\taotao-manager\taotao-manager-daos\target\taotao-manager-daos.jar;D:\taotao\taotao-manager\taotao-manager-pojos\target\taotao-manager-pojos.jar;E:\javadevelop\mavenRepository\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;E:\javadevelop\mavenRepository\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;E:\javadevelop\mavenRepository\com\github\pagehelper\pagehelper\5.0.0\pagehelper-5.0.0.jar;E:\javadevelop\mavenRepository\com\github\jsqlparser\jsqlparser\0.9.5\jsqlparser-0.9.5.jar;E:\javadevelop\mavenRepository\mysql\mysql-connector-java\5.1.32\mysql-connector-java-5.1.32.jar;E:\javadevelop\mavenRepository\com\alibaba\druid\1.0.9\druid-1.0.9.jar;C:\Program Files\Java\jdk1.7.0_80\jre\..\lib\jconsole.jar;C:\Program Files\Java\jdk1.7.0_80\jre\..\lib\tools.jar;D:\taotao\taotao-search\taotao-search-interfaces\target\taotao-search-interfaces.jar;E:\javadevelop\mavenRepository\commons-fileupload\commons-fileupload\1.3.1\commons-fileupload-1.3.1.jar;E:\javadevelop\mavenRepository\org\springframework\spring-context\4.2.4.RELEASE\spring-context-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\org\springframework\spring-aop\4.2.4.RELEASE\spring-aop-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;E:\javadevelop\mavenRepository\org\springframework\spring-core\4.2.4.RELEASE\spring-core-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;E:\javadevelop\mavenRepository\org\springframework\spring-expression\4.2.4.RELEASE\spring-expression-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\org\springframework\spring-beans\4.2.4.RELEASE\spring-beans-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\org\springframework\spring-webmvc\4.2.4.RELEASE\spring-webmvc-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\org\springframework\spring-web\4.2.4.RELEASE\spring-web-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\org\springframework\spring-jdbc\4.2.4.RELEASE\spring-jdbc-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\org\springframework\spring-tx\4.2.4.RELEASE\spring-tx-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\org\springframework\spring-aspects\4.2.4.RELEASE\spring-aspects-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\org\aspectj\aspectjweaver\1.8.7\aspectjweaver-1.8.7.jar;E:\javadevelop\mavenRepository\org\springframework\spring-jms\4.2.4.RELEASE\spring-jms-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\org\springframework\spring-messaging\4.2.4.RELEASE\spring-messaging-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\org\springframework\spring-context-support\4.2.4.RELEASE\spring-context-support-4.2.4.RELEASE.jar;E:\javadevelop\mavenRepository\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;E:\javadevelop\mavenRepository\log4j\log4j\1.2.14\log4j-1.2.14.jar;E:\javadevelop\mavenRepository\org\apache\activemq\activemq-all\5.11.2\activemq-all-5.11.2.jar;E:\javadevelop\mavenRepository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;E:\javadevelop\mavenRepository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;E:\javadevelop\mavenRepository\org\apache\zookeeper\zookeeper\3.4.7\zookeeper-3.4.7.jar;E:\javadevelop\mavenRepository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;E:\javadevelop\mavenRepository\org\slf4j\slf4j-log4j12\1.6.4\slf4j-log4j12-1.6.4.jar;E:\javadevelop\mavenRepository\jline\jline\0.9.94\jline-0.9.94.jar;E:\javadevelop\mavenRepository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;E:\javadevelop\mavenRepository\org\apache\solr\solr-solrj\4.10.3\solr-solrj-4.10.3.jar;E:\javadevelop\mavenRepository\commons-io\commons-io\2.3\commons-io-2.3.jar;E:\javadevelop\mavenRepository\org\apache\httpcomponents\httpclient\4.3.5\httpclient-4.3.5.jar;E:\javadevelop\mavenRepository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar;E:\javadevelop\mavenRepository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar;E:\javadevelop\mavenRepository\org\codehaus\woodstox\wstx-asl\3.2.7\wstx-asl-3.2.7.jar;E:\javadevelop\mavenRepository\org\noggit\noggit\0.5\noggit-0.5.jar;E:\javadevelop\mavenRepository\junit\junit\4.12\junit-4.12.jar;E:\javadevelop\mavenRepository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\javadevelop\mavenRepository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;D:\taotao\taotao-common\target\taotao-common.jar;E:\javadevelop\mavenRepository\joda-time\joda-time\2.5\joda-time-2.5.jar;E:\javadevelop\mavenRepository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;E:\javadevelop\mavenRepository\commons-net\commons-net\3.3\commons-net-3.3.jar;E:\javadevelop\mavenRepository\com\fasterxml\jackson\core\jackson-databind\2.4.2\jackson-databind-2.4.2.jar;E:\javadevelop\mavenRepository\com\fasterxml\jackson\core\jackson-annotations\2.4.0\jackson-annotations-2.4.0.jar;E:\javadevelop\mavenRepository\com\fasterxml\jackson\core\jackson-core\2.4.2\jackson-core-2.4.2.jar;E:\javadevelop\mavenRepository\org\quartz-scheduler\quartz\2.2.2\quartz-2.2.2.jar;E:\javadevelop\mavenRepository\c3p0\c3p0\0.9.1.1\c3p0-0.9.1.1.jar;E:\javadevelop\mavenRepository\redis\clients\jedis\2.7.2\jedis-2.7.2.jar;E:\javadevelop\mavenRepository\org\apache\commons\commons-pool2\2.3\commons-pool2-2.3.jar;
+
+
+[INFO ] 2018-07-16 20:44:29,732 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\javadevelop\apache-maven-3.3.9/bin;D:\Program Files\Git\mingw64\libexec\git-core;D:\Program Files\Git\bin;C:\Users\yanhk\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\MySQL\MySQL Workbench 6.2 CE;;.
+
+
+[INFO ] 2018-07-16 20:44:29,732 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\yanhk\AppData\Local\Temp\
+
+
+[INFO ] 2018-07-16 20:44:29,732 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-07-16 20:44:29,732 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2018-07-16 20:44:29,732 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-07-16 20:44:29,732 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2018-07-16 20:44:29,732 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=yanhk
+
+
+[INFO ] 2018-07-16 20:44:29,732 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\yanhk
+
+
+[INFO ] 2018-07-16 20:44:29,732 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\taotao\taotao-search\taotao-search-services
+
+
+[INFO ] 2018-07-16 20:44:29,736 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.154:2181,192.168.25.154:2182,192.168.25.154:2183 sessionTimeout=10000 watcher=org.apache.solr.common.cloud.ConnectionManager@1df41e93
+
+
+[INFO ] 2018-07-16 20:44:29,757 method:org.apache.solr.common.cloud.ConnectionManager.waitForConnected(ConnectionManager.java:207)
+Waiting for client to connect to ZooKeeper
+
+
+[INFO ] 2018-07-16 20:44:29,760 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.154/192.168.25.154:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-07-16 20:44:29,778 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.154/192.168.25.154:2182, initiating session
+
+
+[INFO ] 2018-07-16 20:44:30,336 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.154/192.168.25.154:2182, sessionid = 0x26478778aee000f, negotiated timeout = 10000
+
+
+[INFO ] 2018-07-16 20:44:30,336 method:org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:102)
+Watcher org.apache.solr.common.cloud.ConnectionManager@1df41e93 name:ZooKeeperConnection Watcher:192.168.25.154:2181,192.168.25.154:2182,192.168.25.154:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+
+
+[INFO ] 2018-07-16 20:44:30,336 method:org.apache.solr.common.cloud.ConnectionManager.waitForConnected(ConnectionManager.java:225)
+Client is connected to ZooKeeper
+
+
+[INFO ] 2018-07-16 20:44:30,371 method:org.apache.solr.common.cloud.ZkStateReader.createClusterStateWatchersAndUpdate(ZkStateReader.java:280)
+Updating cluster state from ZooKeeper... 
