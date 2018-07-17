@@ -52,6 +52,9 @@ public class UserController {
     @ResponseBody
     public String getUserByToken(@PathVariable String token,String callback){
         TaotaoResult result = userService.getUserByToken(token);
+        if (StringUtils.isNotBlank(callback)){
+            return "callback("+JsonUtils.objectToJson(result)+");";
+        }
         return JsonUtils.objectToJson(result);
     }
     @RequestMapping("logout/{token}")
