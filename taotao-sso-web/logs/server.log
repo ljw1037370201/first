@@ -6294,3 +6294,199 @@ Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resou
 
 [INFO ] 2018-07-18 11:13:31,767 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
 FrameworkServlet 'taotao-sso-web': initialization completed in 10511 ms
+
+
+[INFO ] 2018-07-18 11:45:00,291 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-sso-web': initialization started
+
+
+[INFO ] 2018-07-18 11:45:00,310 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-sso-web-servlet': startup date [Wed Jul 18 11:45:00 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-07-18 11:45:00,338 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [springmvc.xml]
+
+
+[INFO ] 2018-07-18 11:45:00,584 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-07-18 11:45:00,715 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [D:\taotao\taotao-sso-web\target\classes\log4j.properties]
+
+
+[INFO ] 2018-07-18 11:45:00,716 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [D:\taotao\taotao-sso-web\target\classes\resource.properties]
+
+
+[INFO ] 2018-07-18 11:45:00,721 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-07-18 11:45:01,178 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\yanhk\.dubbo\dubbo-registry-192.168.25.167.cache, data: {com.taotao.service.ItemCatService=empty://192.168.25.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=8920&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882504473, com.taotao.service.PictureService=empty://192.168.25.1:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=8920&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882504498, com.taotao.service.ItemService=dubbo://192.168.25.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=8920&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882495039 empty://192.168.25.1/com.taotao.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=12748&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531882871590 empty://192.168.25.1/com.taotao.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=12748&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531882871590, com.taotao.service.ContentService=dubbo://192.168.25.1:20881/com.taotao.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.service.ContentService&methods=getContentList,addContent,findAll&pid=8696&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882524006 empty://192.168.25.1/com.taotao.service.ContentService?application=taotao-protal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ContentService&methods=getContentList,addContent,findAll&pid=12440&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531885348359 empty://192.168.25.1/com.taotao.service.ContentService?application=taotao-protal-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ContentService&methods=getContentList,addContent,findAll&pid=12440&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531885348359, com.taotao.search.service.SearchService=dubbo://192.168.25.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=1016&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882557558 empty://192.168.25.1/com.taotao.search.service.SearchService?application=taotao-serach-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=13472&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531882832971 empty://192.168.25.1/com.taotao.search.service.SearchService?application=taotao-serach-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=13472&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531882832971, com.taotao.search.service.SearchItemService=empty://192.168.25.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importAllItems,addDocument&pid=1016&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882548135, com.taotao.sso.service.UserService=dubbo://192.168.25.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=21024&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882582255 empty://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=16464&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531883601853 empty://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=16464&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531883601853, com.taotao.service.ContentcategoryService=empty://192.168.25.1:20881/com.taotao.service.ContentcategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ContentcategoryService&methods=getContentcategoryById,addContentcategory&pid=8696&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882514555, com.taotao.service.ItemparamService=empty://192.168.25.1:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=8920&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882504590, com.taotao.service.ItemParamItemService=dubbo://192.168.25.1:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=8920&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882504616 empty://192.168.25.1/com.taotao.service.ItemParamItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=12748&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531882881021 empty://192.168.25.1/com.taotao.service.ItemParamItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=12748&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531882881021}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-18 11:45:01,194 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-07-18 11:45:10,213 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-07-18 11:45:10,214 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=yanhk
+
+
+[INFO ] 2018-07-18 11:45:10,214 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2018-07-18 11:45:10,214 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-07-18 11:45:10,214 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2018-07-18 11:45:10,214 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\javadevelop\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.1.3\lib\idea_rt.jar
+
+
+[INFO ] 2018-07-18 11:45:10,215 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\javadevelop\apache-maven-3.3.9/bin;D:\Program Files\Git\mingw64\libexec\git-core;D:\Program Files\Git\bin;C:\Users\yanhk\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\MySQL\MySQL Workbench 6.2 CE;;.
+
+
+[INFO ] 2018-07-18 11:45:10,215 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\yanhk\AppData\Local\Temp\
+
+
+[INFO ] 2018-07-18 11:45:10,216 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-07-18 11:45:10,216 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2018-07-18 11:45:10,216 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-07-18 11:45:10,216 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2018-07-18 11:45:10,216 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=yanhk
+
+
+[INFO ] 2018-07-18 11:45:10,216 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\yanhk
+
+
+[INFO ] 2018-07-18 11:45:10,216 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\taotao\taotao-sso-web
+
+
+[INFO ] 2018-07-18 11:45:10,217 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.167:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@76178940
+
+
+[INFO ] 2018-07-18 11:45:10,243 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.167/192.168.25.167:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-07-18 11:45:10,259 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.167/192.168.25.167:2181, initiating session
+
+
+[INFO ] 2018-07-18 11:45:10,276 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.167/192.168.25.167:2181, sessionid = 0x1648536375100b1, negotiated timeout = 30000
+
+
+[INFO ] 2018-07-18 11:45:10,277 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-07-18 11:45:10,294 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=7532&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531885501017, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-07-18 11:45:10,313 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=7532&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531885501017, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-07-18 11:45:10,340 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=7532&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531885501017, urls: [dubbo://192.168.25.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=21024&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1531882582255, empty://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=7532&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531885501017, empty://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=7532&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531885501017], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-07-18 11:45:10,523 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20883 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x9d97f4de, /192.168.25.1:49287 => /192.168.25.1:20883]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-07-18 11:45:10,523 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient yanhk/192.168.25.1 connect to the server /192.168.25.1:20883, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-07-18 11:45:10,565 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.sso.service.UserService from url zookeeper://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-sso-web&check=false&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=7532&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1531885501017, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-07-18 11:45:10,651 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/page/register]}" onto public java.lang.String com.taotao.sso.controller.PageController.showRegister()
+
+
+[INFO ] 2018-07-18 11:45:10,651 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/page/login]}" onto public java.lang.String com.taotao.sso.controller.PageController.showLogin()
+
+
+[INFO ] 2018-07-18 11:45:10,653 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/register],methods=[POST]}" onto private com.taotao.common.pojo.TaotaoResult com.taotao.sso.controller.UserController.register(com.taotao.pojo.Tbuser)
+
+
+[INFO ] 2018-07-18 11:45:10,653 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/login],methods=[POST]}" onto public com.taotao.common.pojo.TaotaoResult com.taotao.sso.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+
+
+[INFO ] 2018-07-18 11:45:10,654 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/token/{token}],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.taotao.sso.controller.UserController.getUserByToken(java.lang.String,java.lang.String)
+
+
+[INFO ] 2018-07-18 11:45:10,654 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/logout/{token}]}" onto public com.taotao.common.pojo.TaotaoResult com.taotao.sso.controller.UserController.delUserByToken(java.lang.String)
+
+
+[INFO ] 2018-07-18 11:45:10,654 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/user/check/{param}/{type}],methods=[GET]}" onto public com.taotao.common.pojo.TaotaoResult com.taotao.sso.controller.UserController.checkData(java.lang.String,int)
+
+
+[INFO ] 2018-07-18 11:45:10,833 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-sso-web-servlet': startup date [Wed Jul 18 11:45:00 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-07-18 11:45:10,868 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-sso-web-servlet': startup date [Wed Jul 18 11:45:00 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-07-18 11:45:10,912 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2018-07-18 11:45:10,923 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+
+
+[INFO ] 2018-07-18 11:45:10,925 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+
+
+[INFO ] 2018-07-18 11:45:10,927 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+
+
+[INFO ] 2018-07-18 11:45:10,964 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-sso-web': initialization completed in 10671 ms
