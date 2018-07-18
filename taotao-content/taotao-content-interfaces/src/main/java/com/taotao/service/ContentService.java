@@ -3,6 +3,7 @@ package com.taotao.service;
 import com.taotao.common.pojo.EasyUIDataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.Tbcontent;
+import com.taotao.pojo.Tbitemcat;
 
 import java.util.List;
 
@@ -25,4 +26,11 @@ public interface ContentService {
 	 * @return Tbcontent集合
 	 */
 	public List<Tbcontent> getContentList(long categoryId);
+
+	/**
+	 * 根据分类id查询所有分类
+	 * @param parentId 分类id
+	 * @return 当前id的的所有分类
+	 */
+	public List<Tbitemcat> getItemCatAll(long parentId);
 }

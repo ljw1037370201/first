@@ -5,7 +5,9 @@ import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.utils.JsonUtils;
 import com.taotao.jedis.JedisClient;
 import com.taotao.mapper.TbcontentMapper;
+import com.taotao.mapper.TbitemcatMapper;
 import com.taotao.pojo.Tbcontent;
+import com.taotao.pojo.Tbitemcat;
 import com.taotao.service.ContentService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +22,8 @@ public class ContentServiceImpl implements ContentService {
 	
 	@Autowired
 	private TbcontentMapper tbcontentMapper;
-	
+	@Autowired
+	private TbitemcatMapper tbitemcatMapper;
 	@Autowired
 	private JedisClient jedisClient;
 	@Value("${CONTENT_KEY}")
@@ -77,5 +80,11 @@ public class ContentServiceImpl implements ContentService {
 		return result;
 	}
 
-	
+	@Override
+	public List<Tbitemcat> getItemCatAll(long parentId) {
+		List<Tbitemcat> catList = tbitemcatMapper.getCatList(parentId);
+		return catList;
+	}
+
+
 }
