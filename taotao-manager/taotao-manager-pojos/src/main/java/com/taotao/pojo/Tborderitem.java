@@ -3,21 +3,21 @@ package com.taotao.pojo;
 import java.io.Serializable;
 
 public class Tborderitem implements Serializable{
-    private String id;
+    private String id;//id
 
-    private String itemId;
+    private String itemId;//商品id
 
-    private String orderId;
+    private String orderId;//订单id
 
-    private Integer num;
+    private Integer num;//商品购买数量
 
-    private String title;
+    private String title;//商品标题
 
-    private long price;
+    private long price;//商品单价
 
-    private long totalFee;
+    private long totalFee;//商品总金额
 
-    private String picPath;
+    private String picPath;//商品图片地址
 
 	public String getId() {
 		return id;
