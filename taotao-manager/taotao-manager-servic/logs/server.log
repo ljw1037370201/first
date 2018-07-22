@@ -5023,3 +5023,547 @@ zookeeper state changed (SyncConnected)
 
 [INFO ] 2018-07-21 22:30:11,402 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
 Root WebApplicationContext: initialization completed in 2771 ms
+
+
+[INFO ] 2018-07-21 22:35:53,105 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2018-07-21 22:35:53,161 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Jul 21 22:35:53 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-07-21 22:35:53,187 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+
+[INFO ] 2018-07-21 22:35:53,354 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-07-21 22:35:53,484 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [D:\taotao\taotao-manager\taotao-manager-servic\target\classes\db.properties]
+
+
+[INFO ] 2018-07-21 22:35:53,485 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [D:\taotao\taotao-manager\taotao-manager-servic\target\classes\jedis.properties]
+
+
+[INFO ] 2018-07-21 22:35:53,485 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [D:\taotao\taotao-manager\taotao-manager-servic\target\classes\log4j.properties]
+
+
+[INFO ] 2018-07-21 22:35:53,485 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [D:\taotao\taotao-manager\taotao-manager-servic\target\classes\resource.properties]
+
+
+[INFO ] 2018-07-21 22:35:53,491 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-07-21 22:35:54,347 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,424 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,424 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to url dubbo://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754362, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,424 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemService url dubbo://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754362 to registry registry://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=8752&registry=zookeeper&timestamp=1532183754352, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,594 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.1.15:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,609 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\yanhk\.dubbo\dubbo-registry-192.168.25.167.cache, data: {com.taotao.service.ItemCatService=empty://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=17336&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183411283, com.taotao.service.PictureService=empty://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=17336&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183411323, com.taotao.service.ItemService=empty://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=17336&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183410049, com.taotao.service.ContentService=empty://192.168.1.15:20881/com.taotao.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ContentService&methods=getContentList,addContent,findAll,getItemCatAll&pid=4008&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183438988, com.taotao.search.service.SearchService=empty://192.168.1.15:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=8300&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183502324, com.taotao.search.service.SearchItemService=empty://192.168.1.15:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importAllItems,addDocument&pid=8300&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183501930, com.taotao.sso.service.UserService=empty://192.168.1.15:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=2932&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183523202, com.taotao.service.ContentcategoryService=empty://192.168.1.15:20881/com.taotao.service.ContentcategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ContentcategoryService&methods=getContentcategoryById,addContentcategory&pid=4008&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183438499, com.taotao.service.ItemParamItemService=empty://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=17336&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183411375, com.taotao.service.ItemparamService=empty://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=17336&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183411349}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,619 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-07-21 22:35:54,626 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-07-21 22:35:54,627 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=yanhk
+
+
+[INFO ] 2018-07-21 22:35:54,627 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2018-07-21 22:35:54,627 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-07-21 22:35:54,627 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2018-07-21 22:35:54,627 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\javadevelop\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.1.3\lib\idea_rt.jar;C:\Users\yanhk\.IntelliJIdea2018.1\system\captureAgent\debugger-agent.jar
+
+
+[INFO ] 2018-07-21 22:35:54,627 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\javadevelop\apache-maven-3.3.9/bin;D:\Program Files\Git\mingw64\libexec\git-core;D:\Program Files\Git\bin;C:\Users\yanhk\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\MySQL\MySQL Workbench 6.2 CE;;.
+
+
+[INFO ] 2018-07-21 22:35:54,627 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\yanhk\AppData\Local\Temp\
+
+
+[INFO ] 2018-07-21 22:35:54,627 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-07-21 22:35:54,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2018-07-21 22:35:54,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-07-21 22:35:54,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2018-07-21 22:35:54,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=yanhk
+
+
+[INFO ] 2018-07-21 22:35:54,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\yanhk
+
+
+[INFO ] 2018-07-21 22:35:54,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\taotao\taotao-manager\taotao-manager-servic
+
+
+[INFO ] 2018-07-21 22:35:54,629 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.167:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@4ccbb780
+
+
+[INFO ] 2018-07-21 22:35:54,646 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.167/192.168.25.167:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-07-21 22:35:54,665 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.167/192.168.25.167:2181, initiating session
+
+
+[INFO ] 2018-07-21 22:35:54,672 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.167/192.168.25.167:2181, sessionid = 0x164853637510108, negotiated timeout = 30000
+
+
+[INFO ] 2018-07-21 22:35:54,673 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-07-21 22:35:54,674 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754362, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,692 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754362, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,704 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754362, urls: [empty://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754362], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,720 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,726 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,726 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to url dubbo://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754722, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,726 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemCatService url dubbo://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754722 to registry registry://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=8752&registry=zookeeper&timestamp=1532183754722, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,727 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754722, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,735 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754722, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,741 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754722, urls: [empty://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754722], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,742 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.PictureService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,749 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.PictureService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,749 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.PictureService to url dubbo://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754745, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,749 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.PictureService url dubbo://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754745 to registry registry://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=8752&registry=zookeeper&timestamp=1532183754744, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,750 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754745, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,757 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754745, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,772 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754745, urls: [empty://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754745], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,773 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemparamService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,782 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemparamService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,782 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemparamService to url dubbo://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754775, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,782 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemparamService url dubbo://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754775 to registry registry://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=8752&registry=zookeeper&timestamp=1532183754775, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,783 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754775, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,794 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754775, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,808 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754775, urls: [empty://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754775], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,809 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemParamItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,820 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemParamItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,820 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemParamItemService to url dubbo://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754813, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,820 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemParamItemService url dubbo://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754813 to registry registry://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=8752&registry=zookeeper&timestamp=1532183754812, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,821 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754813, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,873 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754813, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,882 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754813, urls: [empty://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754813], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-21 22:35:54,890 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 1784 ms
+
+
+[INFO ] 2018-07-22 15:32:00,707 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2018-07-22 15:32:00,754 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sun Jul 22 15:32:00 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-07-22 15:32:00,785 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+
+[INFO ] 2018-07-22 15:32:00,988 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-07-22 15:32:01,129 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [D:\taotao\taotao-manager\taotao-manager-servic\target\classes\db.properties]
+
+
+[INFO ] 2018-07-22 15:32:01,129 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [D:\taotao\taotao-manager\taotao-manager-servic\target\classes\jedis.properties]
+
+
+[INFO ] 2018-07-22 15:32:01,129 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [D:\taotao\taotao-manager\taotao-manager-servic\target\classes\log4j.properties]
+
+
+[INFO ] 2018-07-22 15:32:01,129 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [D:\taotao\taotao-manager\taotao-manager-servic\target\classes\resource.properties]
+
+
+[INFO ] 2018-07-22 15:32:01,129 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-07-22 15:32:02,069 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,147 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,147 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to url dubbo://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722084, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,147 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemService url dubbo://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722084 to registry registry://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=11500&registry=zookeeper&timestamp=1532244722069, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,334 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.1.15:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,365 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\yanhk\.dubbo\dubbo-registry-192.168.25.167.cache, data: {com.taotao.service.ItemCatService=empty://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754722, com.taotao.order.service.OrderService=dubbo://192.168.1.15:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder&pid=9624&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532188748446 empty://192.168.1.15/com.taotao.order.service.OrderService?application=taotao-order-web&category=configurators&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder&pid=13172&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1532188688146 empty://192.168.1.15/com.taotao.order.service.OrderService?application=taotao-order-web&category=routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder&pid=13172&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1532188688146, com.taotao.service.PictureService=empty://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754745, com.taotao.service.ItemService=dubbo://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754362 empty://192.168.1.15/com.taotao.service.ItemService?application=taotao-cat-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=15992&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1532184065195 empty://192.168.1.15/com.taotao.service.ItemService?application=taotao-cat-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=15992&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1532184065195, com.taotao.service.ContentService=dubbo://192.168.1.15:20881/com.taotao.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.service.ContentService&methods=getContentList,addContent,findAll,getItemCatAll&pid=16924&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183802943 empty://192.168.1.15/com.taotao.service.ContentService?application=taotao-protal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ContentService&methods=getContentList,addContent,findAll,getItemCatAll&pid=7548&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1532183999025 empty://192.168.1.15/com.taotao.service.ContentService?application=taotao-protal-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ContentService&methods=getContentList,addContent,findAll,getItemCatAll&pid=7548&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1532183999025, com.taotao.search.service.SearchService=dubbo://192.168.1.15:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9028&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183881440 empty://192.168.1.15/com.taotao.search.service.SearchService?application=taotao-serach-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=11232&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1532184022297 empty://192.168.1.15/com.taotao.search.service.SearchService?application=taotao-serach-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=11232&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1532184022297, com.taotao.search.service.SearchItemService=empty://192.168.1.15:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importAllItems,addDocument&pid=9028&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183880968, com.taotao.sso.service.UserService=dubbo://192.168.1.15:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=20308&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532185981757 empty://192.168.1.15/com.taotao.sso.service.UserService?application=taotao-order-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=13172&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1532188688728 empty://192.168.1.15/com.taotao.sso.service.UserService?application=taotao-order-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=createUser,delUserByToken,getUserByToken,checkData,loginUser&pid=13172&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1532188688728, com.taotao.service.ContentcategoryService=empty://192.168.1.15:20881/com.taotao.service.ContentcategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ContentcategoryService&methods=getContentcategoryById,addContentcategory&pid=16924&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183802499, com.taotao.service.ItemparamService=empty://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754775, com.taotao.service.ItemParamItemService=dubbo://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=8752&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532183754813 empty://192.168.1.15/com.taotao.service.ItemParamItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=19020&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1532184037426 empty://192.168.1.15/com.taotao.service.ItemParamItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=19020&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1532184037426}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,381 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=yanhk
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\javadevelop\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.1.3\lib\idea_rt.jar;C:\Users\yanhk\.IntelliJIdea2018.1\system\captureAgent\debugger-agent.jar
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\javadevelop\apache-maven-3.3.9/bin;D:\Program Files\Git\mingw64\libexec\git-core;D:\Program Files\Git\bin;C:\Users\yanhk\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\MySQL\MySQL Workbench 6.2 CE;;.
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\yanhk\AppData\Local\Temp\
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=yanhk
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\yanhk
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\taotao\taotao-manager\taotao-manager-servic
+
+
+[INFO ] 2018-07-22 15:32:02,397 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.167:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3b9fe51a
+
+
+[INFO ] 2018-07-22 15:32:02,412 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.167/192.168.25.167:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-07-22 15:32:02,412 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.167/192.168.25.167:2181, initiating session
+
+
+[INFO ] 2018-07-22 15:32:02,475 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.167/192.168.25.167:2181, sessionid = 0x16485363751011f, negotiated timeout = 30000
+
+
+[INFO ] 2018-07-22 15:32:02,475 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-07-22 15:32:02,475 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722084, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,506 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722084, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,537 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722084, urls: [empty://192.168.1.15:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,getTbitemdescById,getTbitemparamById,addItem,getItemById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722084], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,553 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,553 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,553 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to url dubbo://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722553, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,553 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemCatService url dubbo://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722553 to registry registry://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=11500&registry=zookeeper&timestamp=1532244722553, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,553 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722553, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,568 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722553, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,568 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722553, urls: [empty://192.168.1.15:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getCatList&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722553], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,568 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.PictureService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,584 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.PictureService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,584 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.PictureService to url dubbo://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722584, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,584 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.PictureService url dubbo://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722584 to registry registry://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=11500&registry=zookeeper&timestamp=1532244722584, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,584 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722584, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,600 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722584, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,600 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722584, urls: [empty://192.168.1.15:20880/com.taotao.service.PictureService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.PictureService&methods=uploadFile&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722584], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,600 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemparamService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,615 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemparamService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,615 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemparamService to url dubbo://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722600, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,615 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemparamService url dubbo://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722600 to registry registry://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=11500&registry=zookeeper&timestamp=1532244722600, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,615 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722600, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,646 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722600, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,646 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722600, urls: [empty://192.168.1.15:20880/com.taotao.service.ItemparamService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemparamService&methods=insertItemParam,getItemparamByCid&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722600], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,646 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemParamItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,662 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemParamItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,662 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemParamItemService to url dubbo://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722662, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,662 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemParamItemService url dubbo://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722662 to registry registry://192.168.25.167:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=11500&registry=zookeeper&timestamp=1532244722646, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,662 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722662, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,662 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722662, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,678 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722662, urls: [empty://192.168.1.15:20880/com.taotao.service.ItemParamItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemParamItemService&methods=getTbitemparamById&pid=11500&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1532244722662], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-07-22 15:32:02,678 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 1971 ms

@@ -62,7 +62,7 @@ public class OrderServiceImpl implements OrderService {
             Long orderItemId = jedisClient.incr(ORDER_ITEM_ID_GEN_KEY);
             tborderitem.setId(orderItemId.toString());
             //订单号id
-            tborderitem.setItemId(orderId);
+            tborderitem.setOrderId(orderId);
             tborderitemMapper.inertOrderitem(tborderitem);
         }
 

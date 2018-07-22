@@ -54,7 +54,7 @@ public class OrderController {
 
     }
 
-    @RequestMapping("/create")
+    @RequestMapping("/order/create")
     public String createOrder(OrderInfo orderInfo, HttpServletRequest request){
         //走到这里是先经过了拦截器
         Tbuser tbuser = (Tbuser) request.getAttribute("user");

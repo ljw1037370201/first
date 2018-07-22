@@ -32,20 +32,20 @@
 		<input type="hidden" name="paymentType" value="1"/>
 		<c:forEach items="${cartList }" var="cart" varStatus="status">
 			<c:set var="totalPrice"  value="${ totalPrice + (cart.price * cart.num)}"/>
-			<input type="hidden" name="orderItems[${status.index}].itemId" value="${cart.id}"/>
-			<input type="hidden" name="orderItems[${status.index}].num" value="${cart.num }"/>
-			<input type="hidden" name="orderItems[${status.index}].price" value="${cart.price}"/>
-			<input type="hidden" name="orderItems[${status.index}].totalFee" value="${cart.price * cart.num}"/>
-			<input type="hidden" name="orderItems[${status.index}].title" value="${cart.title}"/>
-			<input type="hidden" name="orderItems[${status.index}].picPath" value="${cart.image}"/>
+			<input type="hidden" name="tborderitems[${status.index}].itemId" value="${cart.id}"/>
+			<input type="hidden" name="tborderitems[${status.index}].num" value="${cart.num }"/>
+			<input type="hidden" name="tborderitems[${status.index}].price" value="${cart.price}"/>
+			<input type="hidden" name="tborderitems[${status.index}].totalFee" value="${cart.price * cart.num}"/>
+			<input type="hidden" name="tborderitems[${status.index}].title" value="${cart.title}"/>
+			<input type="hidden" name="tborderitems[${status.index}].picPath" value="${cart.image}"/>
 		</c:forEach>
 		<input type="hidden" name="payment" value="<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice/100 }"/>"/>
-		<input type="hidden" name="orderShipping.receiverName" value="入云龙"/>
-		<input type="hidden" name="orderShipping.receiverMobile" value="15891588888"/>
-		<input type="hidden" name="orderShipping.receiverState" value="北京"/>
-		<input type="hidden" name="orderShipping.receiverCity" value="北京"/>
-		<input type="hidden" name="orderShipping.receiverDistrict" value="昌平区"/>
-		<input type="hidden" name="orderShipping.receiverAddress" value="西三旗 xxxxxxxxx"/>
+		<input type="hidden" name="tbordershipping.receiverName" value="clive"/>
+		<input type="hidden" name="tbordershipping.receiverMobile" value="156*****730"/>
+		<input type="hidden" name="tbordershipping.receiverState" value="四川省"/>
+		<input type="hidden" name="tbordershipping.receiverCity" value="成都市"/>
+		<input type="hidden" name="tbordershipping.receiverDistrict" value="锦江区"/>
+		<input type="hidden" name="tbordershipping.receiverAddress" value="春熙路10086号"/>
 </form>
 
 <!-- main -->
