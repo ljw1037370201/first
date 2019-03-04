@@ -99,11 +99,6 @@ public class CartController {
         return "cart";
     }
 
-
-
-
-
-
     //用于查询cookie里面是否相同的商品
      private List<Tbitem> getCartList(HttpServletRequest request){
         //默认使用UTF-8编码格式
